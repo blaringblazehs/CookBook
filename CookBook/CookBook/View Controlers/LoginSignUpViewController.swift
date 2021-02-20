@@ -10,9 +10,10 @@ import UIKit
 
 class LoginSignUpViewController: UIViewController {
 
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginButton: CustomButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signUpButton: CustomButton!
+    @IBOutlet weak var CookBookLabel: CustomLabel!
     
     
     override func viewDidLoad() {
@@ -23,16 +24,9 @@ class LoginSignUpViewController: UIViewController {
     
     //sets up UI elements
     func setUpProperties(){
-        //Login Button
-        let orange = CustomColor(witFrame: loginButton.frame).orange
-        loginButton.layer.backgroundColor = orange?.cgColor
-        loginButton.layer.cornerRadius = loginButton.layer.frame.height/2
-        
-        //SignUP Button
-        signUpButton.layer.borderWidth = 2
-        signUpButton.layer.borderColor = orange?.cgColor
-        signUpButton.layer.cornerRadius = signUpButton.layer.frame.height/2
-        
+        signUpButton.makeCustomWhiteButton()
+        CookBookLabel.setSpacing(space: 3)
     }
+    
 
 }

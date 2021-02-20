@@ -10,12 +10,49 @@ import UIKit
 
 class CustomButton: UIButton {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    //First Loding function
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        defaultSetup()
+        
     }
-    */
-
+    
+    //First required loding function
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        defaultSetup()
+        
+    }
+    //customises button to orange background color
+    func defaultSetup() {
+        let orange = CustomColor(witFrame: frame).orange
+        layer.backgroundColor = orange?.cgColor
+        layer.cornerRadius = layer.frame.height/2
+        layer.masksToBounds = true
+        //spacing
+        let spacing = 1.5
+        let buttonAttributedString = NSMutableAttributedString(string: (titleLabel?.text)!)
+        buttonAttributedString.addAttribute(NSAttributedString.Key.kern, value: spacing, range: NSMakeRange(0, buttonAttributedString.length))
+        self.setAttributedTitle(buttonAttributedString, for: .normal)
+       
+        
+    }
+    func makeCustomWhiteButton(){
+        let orange = CustomColor(witFrame: frame).orange
+        //SignUp Button
+        layer.borderWidth = 2
+        backgroundColor = .white
+        layer.borderColor = orange?.cgColor
+        layer.cornerRadius = layer.frame.height/2
+        layer.masksToBounds = true
+        
+        //Spacing
+        let signUpSpacing = 1.5
+        let signUpSpacingButtonAttributedString = NSMutableAttributedString(string: (titleLabel?.text)!)
+        signUpSpacingButtonAttributedString.addAttribute(NSAttributedString.Key.kern, value: signUpSpacing, range: NSMakeRange(0, signUpSpacingButtonAttributedString.length))
+        self.setAttributedTitle(signUpSpacingButtonAttributedString, for: .normal)
+        
+        
+    }
+    
 }

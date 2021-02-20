@@ -18,6 +18,7 @@
 		40C2367825DE618D00BE1972 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2367725DE618D00BE1972 /* CustomColor.swift */; };
 		40C2367B25DE63C600BE1972 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2367A25DE63C600BE1972 /* LoginSignUpViewController.swift */; };
 		40C2367D25DE70E800BE1972 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2367C25DE70E800BE1972 /* CustomButton.swift */; };
+		40C2367F25E0D81300BE1972 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2367E25E0D81300BE1972 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		40C2367725DE618D00BE1972 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		40C2367A25DE63C600BE1972 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		40C2367C25DE70E800BE1972 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		40C2367E25E0D81300BE1972 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		87F447B15935EB4F3673B771 /* Pods-CookBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBook.debug.xcconfig"; path = "Target Support Files/Pods-CookBook/Pods-CookBook.debug.xcconfig"; sourceTree = "<group>"; };
 		A149F426BB46BADACFA236DD /* Pods_CookBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C141A92506AE7AFCACF2215E /* Pods-CookBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookBook.release.xcconfig"; path = "Target Support Files/Pods-CookBook/Pods-CookBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				40C2367725DE618D00BE1972 /* CustomColor.swift */,
 				40C2367C25DE70E800BE1972 /* CustomButton.swift */,
+				40C2367E25E0D81300BE1972 /* CustomLabel.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C2367B25DE63C600BE1972 /* LoginSignUpViewController.swift in Sources */,
+				40C2367F25E0D81300BE1972 /* CustomLabel.swift in Sources */,
 				40C2364725DE542300BE1972 /* AppDelegate.swift in Sources */,
 				40C2367825DE618D00BE1972 /* CustomColor.swift in Sources */,
 				40C2364925DE542300BE1972 /* SceneDelegate.swift in Sources */,
