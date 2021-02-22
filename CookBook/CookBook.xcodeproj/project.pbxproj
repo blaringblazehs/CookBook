@@ -12,6 +12,11 @@
 		40195F9525E11FDD00CBA2BE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9425E11FDD00CBA2BE /* CustomTextField.swift */; };
 		40195F9725E1658E00CBA2BE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9625E1658E00CBA2BE /* SignUpViewController.swift */; };
 		40195F9925E16F4A00CBA2BE /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9825E16F4A00CBA2BE /* CustomNavigationController.swift */; };
+		40195F9B25E2CEAC00CBA2BE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9A25E2CEAC00CBA2BE /* HomeTableViewController.swift */; };
+		40195F9D25E2CEC900CBA2BE /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9C25E2CEC900CBA2BE /* CategoryTableViewController.swift */; };
+		40195F9F25E2CF3900CBA2BE /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9E25E2CF3900CBA2BE /* FavoriteTableViewController.swift */; };
+		40195FA125E2CF9300CBA2BE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195FA025E2CF9300CBA2BE /* ProfileViewController.swift */; };
+		40195FA325E3BAF300CBA2BE /* bigPictureStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */; };
 		40C2364725DE542300BE1972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2364625DE542300BE1972 /* AppDelegate.swift */; };
 		40C2364925DE542300BE1972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2364825DE542300BE1972 /* SceneDelegate.swift */; };
 		40C2364E25DE542300BE1972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C2364C25DE542300BE1972 /* Main.storyboard */; };
@@ -47,6 +52,12 @@
 		40195F9425E11FDD00CBA2BE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		40195F9625E1658E00CBA2BE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		40195F9825E16F4A00CBA2BE /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		40195F9A25E2CEAC00CBA2BE /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		40195F9C25E2CEC900CBA2BE /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		40195F9E25E2CF3900CBA2BE /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		40195FA025E2CF9300CBA2BE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bigPictureStoryboard.storyboard; sourceTree = "<group>"; };
+		401B9CBA25E3BC82003A2068 /* TabBarMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TabBarMenu.storyboard; path = /Users/himanshusoni/Documents/CookBook/CookBook/CookBook/TabBarMenu.storyboard; sourceTree = "<absolute>"; };
 		40C2364325DE542300BE1972 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C2364625DE542300BE1972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C2364825DE542300BE1972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +136,8 @@
 				40C2364625DE542300BE1972 /* AppDelegate.swift */,
 				40C2364825DE542300BE1972 /* SceneDelegate.swift */,
 				40C2364C25DE542300BE1972 /* Main.storyboard */,
+				40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */,
+				401B9CBA25E3BC82003A2068 /* TabBarMenu.storyboard */,
 				40C2364F25DE542800BE1972 /* Assets.xcassets */,
 				40C2365125DE542800BE1972 /* LaunchScreen.storyboard */,
 				40C2365425DE542800BE1972 /* Info.plist */,
@@ -166,8 +179,12 @@
 			isa = PBXGroup;
 			children = (
 				40C2367A25DE63C600BE1972 /* LoginSignUpViewController.swift */,
+				40195F9C25E2CEC900CBA2BE /* CategoryTableViewController.swift */,
 				40195F9225E1147500CBA2BE /* LoginViewController.swift */,
 				40195F9625E1658E00CBA2BE /* SignUpViewController.swift */,
+				40195F9A25E2CEAC00CBA2BE /* HomeTableViewController.swift */,
+				40195F9E25E2CF3900CBA2BE /* FavoriteTableViewController.swift */,
+				40195FA025E2CF9300CBA2BE /* ProfileViewController.swift */,
 			);
 			path = "View Controlers";
 			sourceTree = "<group>";
@@ -296,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C2365325DE542800BE1972 /* LaunchScreen.storyboard in Resources */,
+				40195FA325E3BAF300CBA2BE /* bigPictureStoryboard.storyboard in Resources */,
 				40C2365025DE542800BE1972 /* Assets.xcassets in Resources */,
 				40C2364E25DE542300BE1972 /* Main.storyboard in Resources */,
 			);
@@ -364,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40195F9F25E2CF3900CBA2BE /* FavoriteTableViewController.swift in Sources */,
 				40195F9325E1147500CBA2BE /* LoginViewController.swift in Sources */,
+				40195F9B25E2CEAC00CBA2BE /* HomeTableViewController.swift in Sources */,
 				40C2367B25DE63C600BE1972 /* LoginSignUpViewController.swift in Sources */,
+				40195FA125E2CF9300CBA2BE /* ProfileViewController.swift in Sources */,
 				40C2367F25E0D81300BE1972 /* CustomLabel.swift in Sources */,
 				40C2364725DE542300BE1972 /* AppDelegate.swift in Sources */,
 				40195F9525E11FDD00CBA2BE /* CustomTextField.swift in Sources */,
@@ -374,6 +395,7 @@
 				40195F9725E1658E00CBA2BE /* SignUpViewController.swift in Sources */,
 				40C2364925DE542300BE1972 /* SceneDelegate.swift in Sources */,
 				40C2367D25DE70E800BE1972 /* CustomButton.swift in Sources */,
+				40195F9D25E2CEC900CBA2BE /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
