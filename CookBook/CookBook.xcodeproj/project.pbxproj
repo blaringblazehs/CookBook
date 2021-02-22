@@ -17,6 +17,7 @@
 		40195F9F25E2CF3900CBA2BE /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195F9E25E2CF3900CBA2BE /* FavoriteTableViewController.swift */; };
 		40195FA125E2CF9300CBA2BE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40195FA025E2CF9300CBA2BE /* ProfileViewController.swift */; };
 		40195FA325E3BAF300CBA2BE /* bigPictureStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */; };
+		409885DB25E3CD6200E5F74E /* TabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409885DA25E3CD6200E5F74E /* TabBarStoryboard.storyboard */; };
 		40C2364725DE542300BE1972 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2364625DE542300BE1972 /* AppDelegate.swift */; };
 		40C2364925DE542300BE1972 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C2364825DE542300BE1972 /* SceneDelegate.swift */; };
 		40C2364E25DE542300BE1972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C2364C25DE542300BE1972 /* Main.storyboard */; };
@@ -57,7 +58,7 @@
 		40195F9E25E2CF3900CBA2BE /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		40195FA025E2CF9300CBA2BE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = bigPictureStoryboard.storyboard; sourceTree = "<group>"; };
-		401B9CBA25E3BC82003A2068 /* TabBarMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = TabBarMenu.storyboard; path = /Users/himanshusoni/Documents/CookBook/CookBook/CookBook/TabBarMenu.storyboard; sourceTree = "<absolute>"; };
+		409885DA25E3CD6200E5F74E /* TabBarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarStoryboard.storyboard; sourceTree = "<group>"; };
 		40C2364325DE542300BE1972 /* CookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C2364625DE542300BE1972 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40C2364825DE542300BE1972 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +107,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401B9CBB25E3CC16003A2068 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				40C2364C25DE542300BE1972 /* Main.storyboard */,
+				40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */,
+				409885DA25E3CD6200E5F74E /* TabBarStoryboard.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		40C2363A25DE542200BE1972 = {
 			isa = PBXGroup;
 			children = (
@@ -131,13 +142,11 @@
 		40C2364525DE542300BE1972 /* CookBook */ = {
 			isa = PBXGroup;
 			children = (
+				401B9CBB25E3CC16003A2068 /* StoryBoard */,
 				40C2367925DE637700BE1972 /* View Controlers */,
 				40C2367625DE615500BE1972 /* Custom */,
 				40C2364625DE542300BE1972 /* AppDelegate.swift */,
 				40C2364825DE542300BE1972 /* SceneDelegate.swift */,
-				40C2364C25DE542300BE1972 /* Main.storyboard */,
-				40195FA225E3BAF300CBA2BE /* bigPictureStoryboard.storyboard */,
-				401B9CBA25E3BC82003A2068 /* TabBarMenu.storyboard */,
 				40C2364F25DE542800BE1972 /* Assets.xcassets */,
 				40C2365125DE542800BE1972 /* LaunchScreen.storyboard */,
 				40C2365425DE542800BE1972 /* Info.plist */,
@@ -316,6 +325,7 @@
 				40195FA325E3BAF300CBA2BE /* bigPictureStoryboard.storyboard in Resources */,
 				40C2365025DE542800BE1972 /* Assets.xcassets in Resources */,
 				40C2364E25DE542300BE1972 /* Main.storyboard in Resources */,
+				409885DB25E3CD6200E5F74E /* TabBarStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
