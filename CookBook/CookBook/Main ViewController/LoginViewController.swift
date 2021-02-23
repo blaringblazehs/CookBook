@@ -8,11 +8,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,4 +28,21 @@ class LoginViewController: UIViewController {
     }
     
 
+}
+
+//Mark: - Text Field Slides up
+extension LoginViewController {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        navigationController?.navigationBar.isHidden = true
+        topConstraint.constant = CGFloat(0)
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        topConstraint.constant = CGFloat(109)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        navigationController?.navigationBar.isHidden = false
+        topConstraint.constant = CGFloat(109)
+        textField.resignFirstResponder()
+        return true
+    }
 }
